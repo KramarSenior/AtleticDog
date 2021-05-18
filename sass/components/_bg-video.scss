@@ -6,10 +6,10 @@
     width: 100%;
     opacity: .19;
     z-index: -1;
-
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0% 80%);
     &__content {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-} 
+}  

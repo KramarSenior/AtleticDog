@@ -1,4 +1,73 @@
 .header {
+    background-color: rgba(white, .2);
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0% 80%);
+    position: relative;
+    padding: 15rem 0;
+    &__logo{
+        position: absolute;
+        top: 4rem;
+        left: 3rem;
+        
+    }
 
+    &__img {
+        width: 80%;
+    }
+    &__text {
+        @include centerTrans;
+        font-size: 5rem;
+        text-align: center;
+        font-weight: 700;
+        color: $color-white;
+        text-transform: uppercase;
+        &--green {
+            color: green;
+        }
+    }
 
+    &__menu {
+        position: absolute;
+        top: 4rem;
+        right: 10rem;
+    }
+
+    &__list{
+        list-style: none;
+
+    }
+
+    &__item { 
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            
+
+            font-weight: 400;
+            padding: 1rem 2rem;
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            transition: all .5s;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 231%;
+            transition: all 0.4s;
+        }
+        &:hover,
+        &:active{
+            border-bottom: 4px solid green;
+            background-position: 100%;
+            
+            color: green;
+            transform: translateX(2rem);
+        }
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
 }     
