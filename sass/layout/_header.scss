@@ -16,11 +16,6 @@
     }
     &__text {
         @include centerTrans;
-        font-size: 5rem;
-        text-align: center;
-        font-weight: 700;
-        color: $color-white;
-        text-transform: uppercase;
         &--green {
             color: green;
         }
@@ -45,8 +40,6 @@
     &__link {
         &:link,
         &:visited {
-            
-
             font-weight: 400;
             padding: 1rem 2rem;
             font-size: 2rem;

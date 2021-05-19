@@ -1,0 +1,58 @@
+.start {
+    &__content {
+        background-color: $color-white;
+        width: 80%;
+        border-radius: 3px;
+        height: 50rem;
+        margin: 0 auto;
+    }
+    &__paragraph {
+        padding: 2rem 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__companies {
+    }
+
+    &__list {
+        list-style: none;
+        &:not(:last-child){
+            margin-bottom: 4rem;
+        }
+    }
+    &__item {
+        display: inline-block;
+    }
+
+    &__link {
+    }
+
+    &__link--one {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-weight: 400;
+    }
+
+    &__photoLink {
+        transition: all 0.5s;
+        width: 100%;
+        &:hover {
+            transform: scale(1.19);
+        }
+    }
+
+    &__engrediens {
+        margin-top: 15rem;
+        
+    }
+
+    &__engrediensContent {
+        background-color: $color-white;
+        border-radius: 3px;
+        height: 50rem;
+        margin: 0 auto;
+        padding: 5rem 3rem;
+    }
+}

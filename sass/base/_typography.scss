@@ -4,3 +4,32 @@ body {
     line-height: 1.7;
     color: #777;
 }
+
+.header__main{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 7rem;
+    text-align: center;
+    font-weight: 700;
+    color: $color-white;
+    text-transform: uppercase;
+}
+
+.header__h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+    color: $color-white;
+    text-transform: uppercase;
+    &--green{
+        color: green;
+        text-align: unset;
+    }
+}
+
+.text__medium {
+    font-size: 2rem;
+    font: 400;
+    color: $color-black;
+    font-family: 'Source Code Pro', monospace;
+}
